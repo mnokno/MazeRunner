@@ -27,12 +27,7 @@ namespace MazeRunner
         void Start()
         {
             FindObjectOfType<GridDisplay>().GenerateGrid(testGridA);
-            new MazeGenerator(new IntPair(100, 100), 10);
-            new MazeGenerator(new IntPair(100, 100), 10);
-            new MazeGenerator(new IntPair(100, 100), 10);
-            new MazeGenerator(new IntPair(100, 100), 10);
-            new MazeGenerator(new IntPair(100, 100), 10);
-            new MazeGenerator(new IntPair(100, 100), 10);
+            MazeGenerator maze = new MazeGenerator(new IntPair(100, 100), 10);
         }
 
         // Update is called once per frame
